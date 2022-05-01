@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.main_container{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    position: relative;
+}
+
+#basic_task_header{
+    position: absolute;
+    top:80px;
+    left: 43px;
+}
+.basic_task_container{
+    
+    border: 1px dashed #7B61FF;
+    width: 240px;
+    padding: 10px 20px;
+    height: 500px;
+    position:absolute;
+    left: 43px;
+    top:112px;
+    border-radius: 5px;
+    
+}
+
+@mixin basic_btn($bg_color,$text_color){
+    width:200px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: $bg_color ;
+    color:$text_color;
+    margin-top: 10px;
+    border:none;
+    
+   
+  
+    
+}
+.btn_primary{
+    @include basic_btn(#5D5FEF,white )
+}
+.btn_secondary{
+    @include basic_btn(#EF5DA8, white)
+}
+.btn_success{
+    @include basic_btn(#82F178,white )
+}
+.btn_error{
+    @include basic_btn(#EF775D,white )
+}
+.btn_outline{
+    @include basic_btn(#FFFFFF,#5D5FEF);
+    border: 2px solid #5D5FEF;
+}
+
+.btn_plain{
+    @include basic_btn(#FFFFFF,#5D5FEF);
+    
+    &:hover {
+        border:2px solid #5D5FEF;
+    }
+    
+}
+
+#icon_header{
+    position: absolute;
+    top: 322px;
+    left: 324px;
+    &span{
+        font-weight: bold;
+    }
+
+}
+.icon_container{
+    width: 68px;
+    height: 260px;
+    position: absolute;
+    border-radius: 5px;
+    top: 352px;
+    left: 324px;
+    border: 1px dashed #7B61FF;
+}
+
+@mixin icon_btn_container($top_pos,$left_pos) {
+    height: 28px;
+    width: 28px;
+    background-color: #ffffff;
+    position:absolute;
+    top:$top_pos;
+    left:$left_pos;
+    border:none;
+
+}
+.cross_icon_btn{
+    @include icon_btn_container(20px,20px )
+}
+.back_icon_btn{
+    @include icon_btn_container(68px,20px )
+}
+.edit_icon_btn{
+    @include icon_btn_container(116px,20px )
+}
+.fullscr_icon_btn{
+    @include icon_btn_container(164px,20px )
+}
+.clipbrd_icon_btn{
+    @include icon_btn_container(212px,20px )
+}
+
+.additional_challenge{
+    width: 1245px;
+    height: 879px;
+    
+    position:relative;
+    
+}
+#additional_challenge_header{
+    position: absolute;
+    width: 1006px;
+    height: 60px;
+    left: 41px;
+    top: 44px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #000000;
+}

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main_container {
+  height: 100vh;
+  width: 100wh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#basic_task_header {
+  position: absolute;
+  top: 80px;
+  left: 43px;
+}
+
+.basic_task_container {
+  border: 1px dashed #7B61FF;
+  width: 240px;
+  padding: 10px 20px;
+  height: 500px;
+  position: absolute;
+  left: 43px;
+  top: 112px;
+  border-radius: 5px;
+}
+
+.btn_primary {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #5D5FEF;
+  color: white;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn_secondary {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #EF5DA8;
+  color: white;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn_success {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #82F178;
+  color: white;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn_error {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #EF775D;
+  color: white;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn_outline {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #5D5FEF;
+  margin-top: 10px;
+  border: none;
+  border: 2px solid #5D5FEF;
+}
+
+.btn_plain {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #5D5FEF;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn_plain:hover {
+  border: 2px solid #5D5FEF;
+}
+
+#icon_header {
+  position: absolute;
+  top: 322px;
+  left: 324px;
+}
+
+#icon_headerspan {
+  font-weight: bold;
+}
+
+.icon_container {
+  width: 68px;
+  height: 260px;
+  position: absolute;
+  border-radius: 5px;
+  top: 352px;
+  left: 324px;
+  border: 1px dashed #7B61FF;
+}
+
+.cross_icon_btn {
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+}
+
+.back_icon_btn {
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 68px;
+  left: 20px;
+  border: none;
+}
+
+.edit_icon_btn {
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 116px;
+  left: 20px;
+  border: none;
+}
+
+.fullscr_icon_btn {
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 164px;
+  left: 20px;
+  border: none;
+}
+
+.clipbrd_icon_btn {
+  height: 28px;
+  width: 28px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 212px;
+  left: 20px;
+  border: none;
+}
+
+.additional_challenge {
+  width: 1245px;
+  height: 879px;
+  position: relative;
+}
+
+#additional_challenge_header {
+  position: absolute;
+  width: 1006px;
+  height: 60px;
+  left: 41px;
+  top: 44px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
