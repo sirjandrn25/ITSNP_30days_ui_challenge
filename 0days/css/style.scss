@@ -136,3 +136,19 @@
 
     color: #000000;
 }
+
+.loading_container{
+    position: absolute;
+    left: 46px;
+    top: 117px;
+    
+
+}
+.loading_btn{
+    @include basic_btn(#5D5FEF,white )
+}
+.second_container{
+    position: absolute;
+    left: 46px;
+    top: 220px;
+}

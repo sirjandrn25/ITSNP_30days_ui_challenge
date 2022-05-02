@@ -186,4 +186,26 @@
   /* identical to box height */
   color: #000000;
 }
+
+.loading_container {
+  position: absolute;
+  left: 46px;
+  top: 117px;
+}
+
+.loading_btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #5D5FEF;
+  color: white;
+  margin-top: 10px;
+  border: none;
+}
+
+.second_container {
+  position: absolute;
+  left: 46px;
+  top: 220px;
+}
 /*# sourceMappingURL=style.css.map */

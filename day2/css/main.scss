@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main_container{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar_container{
+    height: 500px;
+    width: 800px;
+    border: 1px dashed rgb(43, 150, 166);
+    padding: 20px;
+}
+.grid_container{
+    width: 350px;
+}
+
+// @mixin  avatar_frame($height_val,$width_val,) {
+//     height: $height_val;
+//     width: $width_val;
+//     border-radius: 50%;
+//     border: 2px solid black;
+//     padding: 2px;
+
+// }
+
+// .img1_container{
+//     @include avatar_frame(50px, 50px)
+// }
+
+
+@mixin avatar_wrapper($height,$width) {
+    height: $height;
+    width: $width;
+    border-radius: 50%;
+    padding:2px;
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+@mixin  avatar_wrapper_outline($color) {
+    border: 2px solid $color;
+}
+.avatar_frame{
+    @include avatar_wrapper(50px,50px )
+}
+.avatar_frame_big{
+    @include avatar_wrapper(70px,70px )
+}
+.avatar_frame_outline_green{
+    @include avatar_wrapper(50px,50px );
+    @include avatar_wrapper_outline(green)
+}
+
+.avatar_frame_outline_blue{
+    @include avatar_wrapper(50px,50px );
+    @include avatar_wrapper_outline(blue)
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    
+}
+
+
+@mixin  badge_container($bg_color) {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: $bg_color;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+.badge_green{
+    @include badge_container(rgb(51, 194, 103));
+}
+.badge_grey{
+    @include badge_container(rgb(113, 111, 111))
+}
+.badge_orange{
+    @include badge_container(rgb(243, 74, 88))
+}
+
+.avatar_groups{
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+}
+.avatar_frame1{
+    @include avatar_wrapper(60px,60px);
+    position: absolute;
+    
+    left: 50px;
+}
+.avatar_frame2{
+    @include avatar_wrapper(55px,55px);
+    position: absolute;
+    left: 90px;
+    
+
+}
+.avatar_frame3{
+    @include avatar_wrapper(54px,54px);
+    position: absolute;
+    left: 130px;
+    
+}
+.avatar_blank{
+    @include avatar_wrapper(45px,45px );
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 122, 131);
+    left: 170px;
+    font-weight: bold;
+    color: white;
+    @include avatar_wrapper_outline(white);
+}
+.text_primary{
+    font-size: 15px;
+    font-weight: bold;
+}
+.text_secondary{
+    font-size: 12px;
+}
+.msg_list{
+    display: flex;
+    align-items: center;
+
+}
