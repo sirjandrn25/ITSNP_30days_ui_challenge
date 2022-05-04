@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-section {
+  height: auto;
+  width: 70%;
+}
+
+.card {
+  width: 384px;
+  height: 379px;
+}
+
+.card-header {
+  height: 40px;
+  background-color: white;
+  padding: 0px;
+}
+
+.thumb {
+  height: 215px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.detail_text {
+  margin-left: 10px;
+}
+
+.detail_text p {
+  size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.detail_text a {
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  font-size: 8px;
+}
+/*# sourceMappingURL=style.css.map */
