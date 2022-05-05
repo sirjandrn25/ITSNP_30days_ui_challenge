@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+
+    // display: grid;
+    // justify-content: center;
+    // align-items: center;
+    position: relative;
+    background-color: rgb(244, 217, 213);
+}
+
+.newsletter_box{
+    height: 500px;
+    width: 905px;
+    top: 50px;
+    left: 210px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 41.98309326171875px;
+    
+    
+    
+}
+
+.email_frame{
+    height: 144px;
+    width: 144px;
+    background-color: rgb(237, 237, 230);
+    border-radius: 51px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+
+}
+.email_frame img{
+    height: 100px;
+    width: 100px;
+    
+}
+.cross_logo{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-weight: bold;
+    color: rgb(97, 94, 94);
+}
+.text_box{
+    width: 500px;
+    text-align: center;
+}
+
+.bottom_text{
+    bottom: 10px;
+}
+
+.success-box{
+    height: 65px;
+    width: 65px;
+    background-color: rgb(86, 240, 173);
+    border-radius: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
