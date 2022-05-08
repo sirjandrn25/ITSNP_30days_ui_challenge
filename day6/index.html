@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Day 6</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <h5 class="navbar-brand h3">Logo</h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Item</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="#">Item</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+            
+            <li class="nav-item d-flex ">
+                <div class="form-check form-switch d-flex align-items-center" id="toggle_switch" >
+                    <input class="form-check-input mx-1" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    
+                    <label for="checkbox" class="form-check-label" >
+                        <i class="fas fa-light fa-sun" id="checkbox_icon"></i>
+                        
+                      </label>
+                  </div>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <!-- <img src="/images/icons8-person-32.png" alt="" class="nav_icon"> -->
+                  <i class="fas fa-light fa-user"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <!-- <img src="/images/icons8-love-24.png" alt="" class="nav_icon"> -->
+                  <i class="fas fa-light fa-heart"></i>
+              </a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="#">
+                  <!-- <img src="/images/icons8-settings.gif" class="nav_icon" alt=""> -->
+                  <i class="fas fa-light fa-hammer"></i>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </nav>
+    <main></main>
+    <footer >
+        <div class="news_box" id="newsletter_box">
+            <h5 class="white">Newsletter</h5>
+            <input type="text" id="newsletter_input" placeholder="your email">
+        </div>
+        <ul class="nav mt-3">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">News</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Link</a>
+              </li>
+           
+          </ul>
+    </footer>
+    
+    <script>
+        let ul = document.getElementsByTagName('ul')[0];
+        let navbar = document.getElementsByTagName('nav')[0];
+        let body = document.getElementsByTagName('body')[0];
+        let switch_label = document.getElementById('switch_img')
+        let toggle_switch = document.getElementById('toggle_switch');
+        let newsletter_box = document.getElementById('newsletter_box');
+        let footer = document.getElementsByTagName('footer')[0];
+        let checkbox_icon = document.getElementById('checkbox_icon');
+        toggle_switch.addEventListener('change',(e)=>{
+            console.log("toggle")
+            if(e.target.checked){
+                
+                switch_label = "/images/icons8-sun-50.png"
+                body.className = "dark"
+                navbar.id="dark"
+                newsletter_box.className = "news_box_dark"
+                footer.className = "dark"
+                checkbox_icon.className = "fas fa-light fa-sun"
+                ul.className = "navbar-nav ms-auto mb-2 mb-lg-0 dark"
+
+
+
+                
+            }else{
+                switch_label.src = "/images/icons8-moon-64.png"
+                body.className = "white"
+                navbar.id="white"
+                newsletter_box.className = "news_box"
+                footer.className = "white"
+                checkbox_icon.className = "fas fa-light fa-moon"
+                ul.className = "navbar-nav ms-auto mb-2 mb-lg-0"
+            }
+            
+        })
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

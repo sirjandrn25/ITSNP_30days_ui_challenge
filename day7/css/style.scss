@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timing_wrapper{
+    height: auto;
+    width: 500px;
+    
+    padding: 10px;
+}
+#other_country_times li:last-child{
+    background: rgb(20, 19, 19) !important;
+    color: white;
+}
