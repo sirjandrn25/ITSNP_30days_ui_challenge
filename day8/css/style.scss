@@ -1,0 +1,71 @@
+@import "utils","event_countdown";
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.main_container{
+    height: 100vh;
+    width: 100wh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer_wrapper{
+    height: 453px;
+    width: 1213px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer_box{
+    height: 116px;
+    width: 560px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins';
+    font-style: normal;
+    color: rgb(101, 101, 254);
+    
+}
+
+.btn_boxes{
+    height:auto;
+    width: 560px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.timer_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+
+.btn_start{
+    @include button_frame(#82F178,#5fee52)
+}
+.btn_stop{
+    @include button_frame(#EF775D,#f16545 )
+}
+.btn_pause{
+    @include button_frame(#5D5FEF,#3438f4 )
+}
+
+.btn_reset{
+    @include button_frame(#f01f4c,#e34360 );
+}
+.btn_resume {
+    @include button_frame(rgb(15, 103, 138),rgb(6, 120, 165) )
+}

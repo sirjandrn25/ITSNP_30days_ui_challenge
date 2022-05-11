@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Event Counter day-8</title>
+  </head>
+  <body>
+    <div class="main_container">
+        <div class="add_event_box">
+            
+            <form action="" id="countdown_event" >
+                <h1 class="text-center text-capitalize text-primary">Add Coming Event</h1>
+                <div class="mb-3">
+                    <label for="id_title">Event Title</label>
+                    <input type="text" name="event_title" id="id_title" class="form-control" placeholder="enter event title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id_date">Event Date</label>
+                    <input type="date" name="event_date" id="id_date" class="form-control" placeholder="Enter event date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id_time">Event Time</label>
+                    <input type="time" name="event_time" id="id_time" placeholder="enter event time" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="id_message">Event Complete Message</label>
+                    <textarea name="event_message" id="id_message" class="form-control"  placeholder="After Complete event message show" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Save</button>
+            </form>
+
+            <div id="event_show_box">
+                
+                <p class="h3 mb-5 text-center">Countdown to <span class="text-primary text-capitalize" id="event_title">Happy New Year</span></p>
+               
+                <div>
+                    
+                    <table class="table table-borderless text-center">
+                        <tbody>
+                            <tr class="time_value">
+                                <td>00</td>
+                                <td>00</td>
+                                <td>00</td>
+                                <td>00</td>
+                            </tr>
+                            <tr class="time_label">
+                                <td>DAYS</td>
+                                <td>HOURS</td>
+                                <td>MINUTES</td>
+                                <td>SECONDS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-outline-danger btn-sm mt-3" onclick="clearEvent()"  >Clear Event</button>
+                    <div id="message_show">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/event_countdown.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

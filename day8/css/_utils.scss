@@ -1,0 +1,35 @@
+
+
+@mixin wrapper_box($height,$width) {
+    height: $height;
+    width: $width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    
+}
+
+@mixin button_frame($bg_color,$hover_bg) {
+    height: 62px;
+    width: 200px;
+    color: white;
+    background-color: $bg_color;
+    border-radius: 8px;
+    border: 1px solid $bg_color;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    &:hover{
+        background-color: $hover_bg;
+    }
+    
+
+    
+}
