@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Day10</title>
+</head>
+<body>
+    <div class="outer_box">
+        <div class="left_side">
+            <h3 >Preferences</h3>
+            <form action="" class="p-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="capital" id="flexCheckDefault">
+                    <label class="form-check-label text-capitalize" for="flexCheckDefault">
+                      include capital letters
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="small" id="flexCheckDefault">
+                    <label class="form-check-label text-capitalize" for="flexCheckDefault">
+                      include small letters
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="symbol" id="flexCheckDefault">
+                    <label class="form-check-label text-capitalize" for="flexCheckDefault">
+                      include symbols
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="number" id="flexCheckDefault">
+                    <label class="form-check-label text-capitalize" for="flexCheckDefault">
+                      include numbers
+                    </label>
+                </div>
+                  
+            </form>
+        </div>
+        <div class="right_side">
+            <h3 class="mb-3 text-center text-white">Random Password</h3>
+            <form action="" id="generate_password">
+                <div class="input-group mb-3">
+                    <input type="text"  name="password" id="id_password" class="form-control" placeholder="xlkfdaioealfda12dfa">
+                    <button type="button" onclick="copy_password()" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="copy">
+                        <img src="icons/copy.png" style="height: 28px; width: 28px;" alt="">
+                    </button>
+                </div>
+                <div class="mb-3 d-flex justify-content-center align-items-center">
+                    <h4 class="text-center ps-5 pe-3 text-white ms-5">Length</h4>
+                    <input type="number" name="length" id="" value="15" class="form-control me-5">
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-secondary text-light">Generate</button>
+                </div>
+                <div id="error_msg">
+
+                </div>
+            </form>
+
+            <textarea name="" id="" placeholder="only for copy text show" cols="30" rows="2"></textarea>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
