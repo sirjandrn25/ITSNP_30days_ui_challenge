@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100wh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 1242px;
+  height: 959px;
+  background: #F7F7FB;
+  border-radius: 20px;
+  padding: 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 20px;
+}
+
+.card_container {
+  width: 896px;
+  height: auto;
+  padding: 20px 40px;
+  background: #FFFFFF;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+          box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+  border-radius: 14px;
+}
+
+.card_container.active {
+  width: 896px;
+  height: auto;
+  padding: 20px 40px;
+  background: #FFFFFF;
+  border: 2px solid #4A3AFF;
+  -webkit-box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+          box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+  border-radius: 14px;
+}
+
+.card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card_header .header {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #170F49;
+}
+
+.card_header .btn_active.collapsed {
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+          box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 50%;
+  border: none;
+  background-image: url(non_active_dropdown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_header .btn_active {
+  width: 50px;
+  height: 50px;
+  background: #4A3AFF;
+  -webkit-box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+          box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 50%;
+  border: none;
+  background-image: url(active_dropdown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */
